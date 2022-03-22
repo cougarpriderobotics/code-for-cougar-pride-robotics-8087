@@ -1,0 +1,33 @@
+import edu.wpi.first.wpilibj.Joystick;
+
+
+ if (controller.getRawAxis(1) > 0)
+    {
+      left_Speed_group.set(0.75);
+    }
+
+    else if (controller.getRawAxis(1) < 0)
+    {
+      left_Speed_group.set(-0.75);
+    }
+    
+    else
+    {
+      left_Speed_group.stopMotor();
+    }
+
+    if (controller.getRawAxis(5) > 0)
+    {
+      right_Speed_group.set(0.75);
+    }
+
+    else if (controller.getRawAxis(5) < 0)
+    {
+      right_Speed_group.set(-0.75);
+    }
+
+    else
+    {
+      right_Speed_group.stopMotor();
+    }
+  }
